@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import Counter from '@/components/ui/Counter.vue'
+import CounterWidget from '@/components/ui/CounterWidget.vue'
 </script>
 
 <template>
   <h1>Counter</h1>
   <div>
-    <Counter />
+    <CounterWidget />
   </div>
 </template>

@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import AppHeader from '@/components/layout/AppHeader.vue'
+import AppFooter from '@/components/layout/AppFooter.vue'
+</script>
 
 <template>
   <div id="app">
@@ -9,8 +12,3 @@
     <AppFooter />
   </div>
 </template>
-
-<script setup>
-import AppHeader from '@/components/layout/Header.vue'
-import AppFooter from '@/components/layout/Footer.vue'
-</script>

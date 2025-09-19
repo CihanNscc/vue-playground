@@ -5,23 +5,23 @@ const router = createRouter({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: () => import('../views/Home.vue'),
+      name: 'HomeView',
+      component: () => import('../views/HomeView.vue'),
     },
     {
       path: '/counter',
-      name: 'Counter',
-      component: () => import('../views/Counter.vue'),
+      name: 'CounterView',
+      component: () => import('../views/CounterView.vue'),
     },
     {
       path: '/pokemons',
-      name: 'Pokemons',
-      component: () => import('../views/Pokemons.vue'),
+      name: 'PokemonsView',
+      component: () => import('../views/PokemonsView.vue'),
     },
     {
       path: '/pokemon/:id',
-      name: 'Pokemon',
-      component: () => import('../views/Pokemon.vue'),
+      name: 'PokemonView',
+      component: () => import('../views/PokemonView.vue'),
     },
   ],
 })
