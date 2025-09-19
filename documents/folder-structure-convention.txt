@@ -1,0 +1,44 @@
+src/
+├── components/           # Reusable UI components
+│   ├── ui/              # Basic UI components
+│   │   ├── BaseButton.vue
+│   │   ├── BaseInput.vue
+│   │   └── BaseCard.vue
+│   ├── layout/          # Layout components
+│   │   ├── AppHeader.vue
+│   │   ├── AppFooter.vue
+│   │   └── AppSidebar.vue
+│   └── common/          # Feature-specific reusable components
+│       ├── UserCard.vue
+│       ├── ProductList.vue
+│       └── SearchBar.vue
+├── views/               # Page components (route components)
+│   ├── HomeView.vue     # Convention: suffix with "View"
+│   ├── AboutView.vue
+│   ├── ContactView.vue
+│   └── users/
+│       ├── UsersView.vue      # /users route
+│       ├── UserDetailView.vue # /users/:id route
+│       └── UserEditView.vue   # /users/:id/edit route
+├── router/
+│   └── index.js         # Route definitions
+├── stores/              # Pinia stores (state management)
+│   ├── index.js
+│   ├── auth.js
+│   └── users.js
+├── composables/         # Reusable composition functions
+│   ├── useAuth.js
+│   ├── useApi.js
+│   └── useLocalStorage.js
+├── assets/              # Static assets
+│   ├── images/
+│   ├── styles/
+│   │   ├── main.css
+│   │   └── variables.css
+│   └── icons/
+├── utils/               # Utility functions
+│   ├── helpers.js
+│   ├── constants.js
+│   └── api.js
+├── App.vue              # Root component
+└── main.js              # App entry point
