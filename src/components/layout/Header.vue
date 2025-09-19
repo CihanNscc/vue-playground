@@ -4,6 +4,7 @@
   </header>
   <nav>
     <router-link to="/">Home</router-link>
+    <router-link to="/counter">Counter</router-link>
     <router-link to="/Pokemons">Pokemons</router-link>
   </nav>
 </template>
