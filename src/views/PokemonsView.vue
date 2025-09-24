@@ -30,15 +30,23 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1>Pokemons</h1>
+  <div class="flex flex-col items-center gap-4 p-4">
+    <h1 class="text-3xl font-bold">Pokemons</h1>
 
-  <div v-if="loading">Loading...</div>
-  <div v-else-if="error">Error: {{ error }}</div>
-  <div v-else>
-    <ul>
-      <li v-for="pokemon in pokemons" :key="pokemon.name">
-        <router-link :to="`/pokemon/${pokemon.name}`">{{ pokemon.name }}</router-link>
-      </li>
-    </ul>
+    <div v-if="loading">Loading...</div>
+    <div v-else-if="error">Error: {{ error }}</div>
+    <div v-else class="w-full">
+      <ul class="flex flex-col gap-2 w-fit">
+        <li
+          v-for="pokemon in pokemons"
+          :key="pokemon.name"
+          class="p-2 bg-violet-800 hover:bg-violet-600 rounded cursor-pointer"
+        >
+          <router-link :to="`/pokemon/${pokemon.name}`" class="text-white font-bold">{{
+            pokemon.name
+          }}</router-link>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>

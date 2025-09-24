@@ -30,9 +30,19 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1>Pokemon</h1>
+  <div class="flex flex-col items-center gap-4 p-4">
+    <h1 class="text-3xl font-bold">{{ pokemon?.name }}</h1>
 
-  <div v-if="loading">Loading...</div>
-  <div v-else-if="error">Error: {{ error }}</div>
-  <div v-else>Pokemon</div>
+    <div v-if="loading">Loading...</div>
+    <div v-else-if="error">Error: {{ error }}</div>
+    <div v-else>
+      <img :src="pokemon?.sprites.front_default" :alt="pokemon?.name" />
+      <p>{{ pokemon?.types[0].type.name }}</p>
+      <p>{{ pokemon?.weight }}</p>
+      <p>{{ pokemon?.height }}</p>
+      <p>{{ pokemon?.abilities[0].ability.name }}</p>
+      <p>{{ pokemon?.moves[0].move.name }}</p>
+      <p>{{ pokemon?.stats[0].base_stat }}</p>
+    </div>
+  </div>
 </template>
