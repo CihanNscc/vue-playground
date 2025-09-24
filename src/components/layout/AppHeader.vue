@@ -3,23 +3,52 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <header class="text-center bg-blue-600 text-white py-4">
-    <h1 class="text-3xl font-bold">Vue Pokemon App</h1>
-    <p class="text-red-500 text-xl">Test Tailwind (should be red and large)</p>
+  <!-- Modern Header with Gradient Background -->
+  <header class="relative bg-gradient-to-r from-indigo-600 via-purple-600 to-blue-600 text-white shadow-lg">
+    <div class="absolute inset-0 bg-black/10"></div>
+    <div class="relative container mx-auto px-6 py-8">
+      <div class="text-center">
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-2">
+          <span class="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+            Vue Pokemon
+          </span>
+          <span class="text-white">App</span>
+        </h1>
+        <p class="text-indigo-100 text-lg font-medium">
+          Discover and explore the world of Pokemon
+        </p>
+      </div>
+    </div>
   </header>
-  <nav class="flex justify-around bg-gray-100 py-2">
-    <RouterLink to="/" class="px-16 py-2 text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded"
-      >Home</RouterLink
-    >
-    <RouterLink
-      to="/utils"
-      class="px-4 py-2 text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded"
-      >Utils</RouterLink
-    >
-    <RouterLink
-      to="/pokemons"
-      class="px-4 py-2 text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded"
-      >Pokemons</RouterLink
-    >
+
+  <!-- Modern Navigation -->
+  <nav class="bg-white/95 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50 shadow-sm">
+    <div class="container mx-auto px-6">
+      <div class="flex justify-center space-x-1 py-4">
+        <RouterLink
+          to="/"
+          class="group relative px-6 py-3 text-gray-700 font-medium rounded-lg transition-all duration-300 hover:text-indigo-600 hover:bg-indigo-50"
+        >
+          <span class="relative z-10">Home</span>
+          <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+        </RouterLink>
+        
+        <RouterLink
+          to="/utils"
+          class="group relative px-6 py-3 text-gray-700 font-medium rounded-lg transition-all duration-300 hover:text-indigo-600 hover:bg-indigo-50"
+        >
+          <span class="relative z-10">Utils</span>
+          <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+        </RouterLink>
+        
+        <RouterLink
+          to="/pokemons"
+          class="group relative px-6 py-3 text-gray-700 font-medium rounded-lg transition-all duration-300 hover:text-indigo-600 hover:bg-indigo-50"
+        >
+          <span class="relative z-10">Pokemons</span>
+          <div class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+        </RouterLink>
+      </div>
+    </div>
   </nav>
 </template>
