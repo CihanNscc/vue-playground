@@ -3,23 +3,12 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <header>
-    <h1>Vue Pokemon App</h1>
+  <header class="text-center bg-blue-600 text-white py-4">
+    <h1 class="text-3xl font-bold">Vue Pokemon App</h1>
   </header>
-  <nav>
-    <RouterLink to="/">Home</RouterLink>
-    <RouterLink to="/utils">Utils</RouterLink>
-    <RouterLink to="/pokemons">Pokemons</RouterLink>
+  <nav class="flex justify-around bg-gray-100 py-2">
+    <RouterLink to="/" class="px-4 py-2 text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded">Home</RouterLink>
+    <RouterLink to="/utils" class="px-4 py-2 text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded">Utils</RouterLink>
+    <RouterLink to="/pokemons" class="px-4 py-2 text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded">Pokemons</RouterLink>
   </nav>
 </template>
-
-<style scoped>
-header {
-  text-align: center;
-}
-
-nav {
-  display: flex;
-  justify-content: space-around;
-}
-</style>
