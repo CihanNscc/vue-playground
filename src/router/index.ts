@@ -23,6 +23,11 @@ const router = createRouter({
       name: 'PokemonView',
       component: () => import('../views/PokemonView.vue'),
     },
+    {
+      path: '/pg',
+      name: 'PlaygroundView',
+      component: () => import('../views/PlaygroundView.vue'),
+    },
   ],
 })
 

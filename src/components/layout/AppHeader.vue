@@ -56,6 +56,16 @@ import { RouterLink } from 'vue-router'
             class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg opacity-0 group-hover:opacity-10 transition-opacity duration-300"
           ></div>
         </RouterLink>
+
+        <RouterLink
+          to="/pg"
+          class="group relative px-6 py-3 text-gray-700 font-medium rounded-lg transition-all duration-300 hover:text-indigo-600 hover:bg-indigo-50"
+        >
+          <span class="relative z-10">Playground</span>
+          <div
+            class="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+          ></div>
+        </RouterLink>
       </div>
     </div>
   </nav>
