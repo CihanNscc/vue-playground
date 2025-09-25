@@ -72,7 +72,7 @@ onMounted(() => {
         >
           <!-- Card Background Gradient -->
           <div class="absolute inset-0 bg-gradient-to-br from-indigo-50 via-purple-50 to-blue-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          
+
           <!-- Card Content -->
           <div class="relative p-6 text-center">
             <!-- Pokemon Icon Placeholder -->
@@ -81,12 +81,12 @@ onMounted(() => {
                 {{ pokemon.name.charAt(0).toUpperCase() }}
               </span>
             </div>
-            
+
             <!-- Pokemon Name -->
             <h3 class="text-lg font-bold text-gray-800 capitalize mb-2 group-hover:text-indigo-600 transition-colors duration-300">
               {{ pokemon.name }}
             </h3>
-            
+
             <!-- Hover Arrow -->
             <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <svg class="w-5 h-5 text-indigo-500 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -94,7 +94,7 @@ onMounted(() => {
               </svg>
             </div>
           </div>
-          
+
           <!-- Card Border Glow Effect -->
           <div class="absolute inset-0 rounded-2xl border-2 border-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-blue-500 opacity-0 group-hover:opacity-20 transition-opacity duration-300 -z-10"></div>
         </router-link>
